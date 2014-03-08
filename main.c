@@ -37,6 +37,13 @@ int main(void)
 
 	usart_puts("Quadro started!\r\n");
 
+	/*motor_set(1, 2815);
+	motor_set(2, 2815);
+	motor_set(3, 2815);
+	motor_set(4, 2815);*/
+
+
+
 
 	while(1)
 	{

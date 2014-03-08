@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m3 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F103RB -DSTM32F10X_MD -I..\..\..\..\..\Users\Marcin_2\Documents\Quadrocopter\QuadroTwins-master\uC\Quadro\cmsis_boot -I..\..\..\..\..\Users\Marcin_2\Documents\Quadrocopter\QuadroTwins-master\uC\Quadro -I..\..\..\..\..\Users\Marcin_2\Documents\Quadrocopter\QuadroTwins-master\uC\Quadro\cmsis -I..\..\..\..\..\Users\Marcin_2\Documents\Quadrocopter\QuadroTwins-master\uC -I..\..\..\..\..\Users\Marcin_2\Documents\Quadrocopter\QuadroTwins-master">
+      <target file="lipo.o" lastModified="143f7c750e3">
+         <source file="..\..\..\lipo.c" lastModified="14091cc8350"/>
+      </target>
+      <target file="syscalls.o" lastModified="143f7c74db9">
+         <source file="..\..\..\syscalls\syscalls.c" lastModified="14091cc8350"/>
+      </target>
+      <target file="regulation.o" lastModified="14424ec95ff">
+         <source file="..\..\..\regulation.c" lastModified="14424ec8eb2"/>
+      </target>
+      <target file="buzzer.o" lastModified="143f7c73b82">
+         <source file="..\..\..\buzzer.c" lastModified="14091cc8350"/>
+      </target>
+      <target file="leds.o" lastModified="143f7c74c46">
+         <source file="..\..\..\leds.c" lastModified="141ff7362b0"/>
+      </target>
+      <target file="sensors.o" lastModified="143f7c74fdf">
+         <source file="..\..\..\sensors.c" lastModified="140bab3faa0"/>
+      </target>
+      <target file="printf.o" lastModified="143f7c741c4">
+         <source file="..\..\..\stdio\printf.c" lastModified="14091cc8350"/>
+      </target>
+      <target file="core_cm3.o" lastModified="143f7c73abc">
+         <source file="..\..\..\cmsis\core_cm3.c" lastModified="14091cc8350"/>
+      </target>
+      <target file="system_stm32f10x.o" lastModified="143f7c73c6b">
+         <source file="..\..\..\cmsis_boot\system_stm32f10x.c" lastModified="14091cc8350"/>
+      </target>
+      <target file="aparature.o" lastModified="143f7c74a2b">
+         <source file="..\..\..\aparature.c" lastModified="140babe81f0"/>
+      </target>
+      <target file="main.o" lastModified="14424da1327">
+         <source file="..\..\..\main.c" lastModified="14424d9e1c4"/>
+      </target>
+      <target file="usart.o" lastModified="143f7c75637">
+         <source file="..\..\..\usart.c" lastModified="143f7c287a2"/>
+      </target>
+      <target file="motors.o" lastModified="143f7c74ee1">
+         <source file="..\..\..\motors.c" lastModified="143f7c70416"/>
+      </target>
+      <target file="startup_stm32f10x_md.o" lastModified="143f7c73d24">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f10x_md.c" lastModified="14091cc8350"/>
+      </target>
+   </processor>
+</history>

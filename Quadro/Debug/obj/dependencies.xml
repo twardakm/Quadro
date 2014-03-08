@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dependencies>
+   <includePath signature="/I..\..\..\..\..\Users\Marcin_2\Documents\Quadrocopter\QuadroTwins-master\uC\Quadro\cmsis_boot /I..\..\..\..\..\Users\Marcin_2\Documents\Quadrocopter\QuadroTwins-master\uC\Quadro /I..\..\..\..\..\Users\Marcin_2\Documents\Quadrocopter\QuadroTwins-master\uC\Quadro\cmsis /I..\..\..\..\..\Users\Marcin_2\Documents\Quadrocopter\QuadroTwins-master\uC /I..\..\..\..\..\Users\Marcin_2\Documents\Quadrocopter\QuadroTwins-master">
+      <source file="..\..\..\leds.h" lastModified="14091cc8350">
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f10x.h" lastModified="14091cc8738">
+         <include file="..\..\..\cmsis\core_cm3.h"/>
+         <include file="..\..\..\cmsis_boot\system_stm32f10x.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f10x_conf.h"/>
+      </source>
+      <source file="..\..\..\lipo.h" lastModified="14091cc8350">
+      </source>
+      <source file="..\..\..\leds.c" lastModified="141ff7362b0">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+         <include file="..\..\..\hdr_bitband.h"/>
+         <include file="..\..\..\aparature.h"/>
+      </source>
+      <source file="..\..\..\lipo.c" lastModified="14091cc8350">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+         <include file="..\..\..\lipo.h"/>
+      </source>
+      <source file="..\..\..\regulation.h" lastModified="140bab90b80">
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f10x_conf.h" lastModified="14091cc8350">
+      </source>
+      <source file="..\..\..\buzzer.h" lastModified="14091cc8350">
+      </source>
+      <source file="..\..\..\usart.c" lastModified="143f7c287a2">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+         <include file="..\..\..\sensors.h"/>
+         <include file="..\..\..\regulation.h"/>
+         <include file="..\..\..\lipo.h"/>
+         <include file="..\..\..\aparature.h"/>
+      </source>
+      <source file="..\..\..\buzzer.c" lastModified="14091cc8350">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\cmsis\core_cm3.h" lastModified="14091cc8b20">
+      </source>
+      <source file="..\..\..\stdio\printf.c" lastModified="14091cc8b20">
+      </source>
+      <source file="..\..\..\motors.h" lastModified="140baa15d00">
+      </source>
+      <source file="..\..\..\syscalls\syscalls.c" lastModified="14091cc92f0">
+      </source>
+      <source file="..\..\..\cmsis\core_cm3.c" lastModified="14091cc8738">
+      </source>
+      <source file="..\..\..\motors.c" lastModified="143f7c70416">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\aparature.h" lastModified="140bab93a60">
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f10x.h" lastModified="14091cc8350">
+      </source>
+      <source file="..\..\..\sensors.h" lastModified="14091cc8350">
+      </source>
+      <source file="..\..\..\main.c" lastModified="14424d9e1c4">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+         <include file="..\..\..\leds.h"/>
+         <include file="..\..\..\motors.h"/>
+         <include file="..\..\..\sensors.h"/>
+         <include file="..\..\..\lipo.h"/>
+         <include file="..\..\..\buzzer.h"/>
+         <include file="..\..\..\regulation.h"/>
+         <include file="..\..\..\aparature.h"/>
+      </source>
+      <source file="..\..\..\aparature.c" lastModified="140babe81f0">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+         <include file="..\..\..\aparature.h"/>
+      </source>
+      <source file="..\..\..\sensors.c" lastModified="140bab3faa0">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+         <include file="..\..\..\sensors.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f10x.c" lastModified="14091cc8350">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\hdr_bitband.h" lastModified="14091cc8350">
+      </source>
+      <source file="..\..\..\cmsis_boot\startup\startup_stm32f10x_md.c" lastModified="14091cc8350">
+      </source>
+   </includePath>
+</dependencies>

@@ -224,10 +224,10 @@ void USART2_IRQHandler()
 			pid[0].sum_error = 0;
 			pid[1].last_error = 0;
 			pid[1].sum_error = 0;
-			motor_set(1, 0);
+			/*motor_set(1, 0);
 			motor_set(2, 0);
 			motor_set(3, 0);
-			motor_set(4, 0);
+			motor_set(4, 0);*/
 			break;
 
 		case 0x03: //czytaj k¹t

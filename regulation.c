@@ -11,13 +11,13 @@ int iPower = 0;
 uint8_t armed = 0;
 void regulation_init()
 {
-	pid[0].p = 1.0;
-	pid[0].i = 0.05;
-	pid[0].d = 0.10;
+	pid[0].p = 0;
+	pid[0].i = 0;
+	pid[0].d = 0;
 
-	pid[1].p = 1.0;
-	pid[1].i = 0.05;
-	pid[1].d = 0.10;
+	pid[1].p = 0;
+	pid[1].i = 0;
+	pid[1].d = 0;
 
 	iPower = iMotorMin;
 
@@ -32,8 +32,9 @@ void regulation_loop()
 {
 	sensors_read();
 	curr_angle = getCurrentAngle(0.0031);
+	//PID_Calc(0.0031);
 
-	if(pilot.throttle_up_down > 0x220 && armed == 0xFF)
+	/*if(pilot.throttle_up_down > 0x220 && armed == 0xFF)
 	{
 		iPower = iMotorMin + (pilot.throttle_up_down - 500)*2;
 		PID_Calc(0.0031);
@@ -45,7 +46,8 @@ void regulation_loop()
 		motor_set(2, 0);
 		motor_set(3, 0);
 		motor_set(4, 0);
-	}
+	}*/
+
 	//temp++;
 
 
@@ -61,10 +63,10 @@ void regulation_loop()
 void PID_Calc(float dt)
 {
 	//X
-	float error = dest_angle.x - curr_angle.x;
+	/*float error = dest_angle.x - curr_angle.x;
 	pid[0].sum_error += error;
 	float valx = (pid[0].p * error) - (pid[0].d * (gyro.x * gyro.scale)) + (pid[0].i * pid[0].sum_error);
-	pid[0].last_error = error;
+	pid[0].last_error = error;*/
 
 
 	/*error = dest_angle.y-curr_angle.y;
@@ -73,19 +75,19 @@ void PID_Calc(float dt)
 	pid[1].last_error = error;
 	pid[1].sum_error += error;*/
 
-	int motor[] = {iPower, iPower, iPower, iPower};
+	/*int motor[] = {iPower, iPower, iPower, iPower};
 
 	motor[0] -= (int)valx;
 	motor[1] -= (int)valx;
 	motor[2] += (int)valx;
-	motor[3] += (int)valx;
+	motor[3] += (int)valx;*/
 
 	/*motor[0] += (int)valy;
 	motor[1] -= (int)valy;
 	motor[2] += (int)valy;
 	motor[3] -= (int)valy;*/
 
-	int i;
+	/*int i;
 	for(i = 0; i < 4; i++)
 	{
 		if(motor[i] > iMotorMax)
@@ -95,7 +97,7 @@ void PID_Calc(float dt)
 			motor[i] = iMotorMin;
 
 		motor_set(i+1, motor[i]);
-	}
+	}*/
 }
 
 Axis getCurrentAngle(float dt)
